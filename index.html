@@ -1,15 +1,16 @@
-<h1> Documentacion de Carla </h1>
+<h1> Documentacio de Carla </h1>
 <h1> INFO </h1>
 <h1> https://hackmd.io/@joaniznardo/emailserver01 </h1>
 <h1> https://phoenixnap.com/kb/how-to-install-docker-on-debian-10 </h1>
 
 <h1> 1) Personalització del domini. </h1>
-<h1> Anem a la web https://demo.poste.io/admin/login on l’usuari és admin@poste.io i la contrasenya admin </h1>
-<h1> Li donem a “domains” </h1>
-<h1> Dins posem el nostre nom i cognom junt amb .io al final </h1>
-<h1> Despres entrarem al nostre domini i posarem un correu i amb aquest correu li enviarem un missatge a joan@surfacad.edu </h1>
-<h1> També enviarem un missatge al nostre compte d’institut </h1>
+<p> Anem a la web https://demo.poste.io/admin/login on l’usuari és admin@poste.io i la contrasenya admin </p>
+<p> Li donem a “domains” </p>
+<p> Dins posem el nostre nom i cognom junt amb .io al final </p>
+<p> Despres entrarem al nostre domini i posarem un correu i amb aquest correu li enviarem un missatge a joan@surfacad.edu </p>
+<p> També enviarem un missatge al nostre compte d’institut </p>
 
 <h1> Creació d’un server </h1>
-<h1> docker volume create volum_mail_server </h1>
-<h1> docker run -p 443:443 -e TZ=Europe/Andorra -v volum_mail_server:/data --name "surfmailserver" -h "canvia_aquest_domini_o_se_veiem_lany_vinent.noesbroma" -t analogic/poste.io </h1>
+<p> docker volume create volum_mail_server </p>
+<p> docker run -p 443:443 -e TZ=Europe/Andorra -v volum_mail_server:/data --name "surfmailserver" -h "canvia_aquest_domini_o_se_veiem_lany_vinent.noesbroma" -t analogic/poste.io </p>
+<h1> 2) Generació de certificats de servidor i client. </h1>
