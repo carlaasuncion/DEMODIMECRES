@@ -1,23 +1,28 @@
-<<h1 style="background-color:DodgerBlue;">Documentacio de Carla </h1>
+<h1 class="text-light"><a href="index.html">Documentació de Carla Asunción</a></h1>
+          
+<li class="active"><a href="index.html"><i class="bx bx-home"></i> <span>INFO</span></a></li>
+<li><a href="#about"><i class="bx bx-user"></i> <span> Personalització del domini. </span></a></li>
+<li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Creació d’un server </span></a></li>
+<li><a href="#proyectos"><i class="bx bx-book-content"></i> Generació de certificats de servidor i client. </a></li>
+<li><a href="#skills"><i class="bx bx-server"></i> Instal·lació del servidor (a.k.a. "Docker is your best friend").</a></li>
+<li><a href="#contact"><i class="bx bx-envelope"></i> Gestió de comptes del domini</a></li>
+<li><a href="#contact"><i class="bx bx-envelope"></i> Enviament de correus entre comptes del propi domini</a></li>
+
 <h2> INFO </h2>
 <p><a href="https://hackmd.io/@joaniznardo/emailserver01">link1</a>
 <p><a href=" https://phoenixnap.com/kb/how-to-install-docker-on-debian-10">link2</a> 
-  
-    <nav class="nav-menu">
-                <ul>
-                    <li class="active"><a href="index.html"><i class="bx bx-home"></i> <span>1) Personalització del domini.</span></a></li>
-                    <li><a href="#about"><i class="bx bx-user"></i> <span>Creació d’un server </span></a></li>
-                    <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>2) Generació de certificats de servidor i client. </span></a></li>
+     
+<h2>Personalització del domini. </h2>
+<p> Anem a la web https://demo.poste.io/admin/login on l’usuari és admin@poste.io i la contrasenya admin
+Li donem a “domains”
+Dins posem el nostre nom i cognom junt amb .io al final
+Despres entrarem al nostre domini i posarem un correu i amb aquest correu li enviarem un missatge a joan@surfacad.edu
+També enviarem un missatge al nostre compte d’institut  <span class="typed" data-typed-items="Engineer, Developer, Researcher"></span></p>
+        
+<h2>Creació d’un server </h2>
+<p> -docker volume create volum_mail_server</p>
 
-<h2> 1) Personalització del domini. </h2>
-<h4> Anem a la web https://demo.poste.io/admin/login on l’usuari és admin@poste.io i la contrasenya admin </h4>
-<h4> Li donem a “domains” </h4>
-<h4> Dins posem el nostre nom i cognom junt amb .io al final </h4>
-<h4> Despres entrarem al nostre domini i posarem un correu i amb aquest correu li enviarem un missatge a joan@surfacad.edu </h4>
-<h4> També enviarem un missatge al nostre compte d’institut </h4>
-
-<h2> Creació d’un server </h2>
-<h4> docker volume create volum_mail_server </h4>
-<h4> docker run -p 443:443 -e TZ=Europe/Andorra -v volum_mail_server:/data --name "surfmailserver" -h "canvia_aquest_domini_o_se_veiem_lany_vinent.noesbroma" -t analogic/poste.io </h4>
-
-<h2> 2) Generació de certificats de servidor i client. </h2>
+<p> -docker run -p 443:443 -e TZ=Europe/Andorra -v volum_mail_server:/data --name "surfmailserver" -h "canvia_aquest_domini_o_se_veiem_lany_vinent.noesbroma" -t analogic/poste.io </p>
+                    
+                 
+<h2>Generació de certificats de servidor i client.</h2>
